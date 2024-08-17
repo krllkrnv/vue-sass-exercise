@@ -1,0 +1,65 @@
+@import "variables";
+@import "reset";
+@import "fonts";
+
+body {
+  background-color: $primary-color;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  background-color: $secondary-color;
+}
+
+.card {
+  background-color: $card-color;
+  &__about {
+    color: $secondary-text-color;
+  }
+  &__title,
+  &__description {
+    color: $primary-text-color;
+  }
+  &__description {
+    font-weight: 400;
+  }
+  &__cast {
+    font-weight: 400;
+  }
+  &__cast {
+    color: $tertiary-text-color;
+  }
+  &__image-container {
+    background-color: $tertiary-background-color;
+  }
+}
+
+.container {
+  &__hr {
+    border-top: 1px solid $tertiary-background-color;
+  }
+  &__back-to {
+    color: $primary-accent-color;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: $primary-text-color;
+  }
+  &__controls {
+    accent-color: $primary-accent-color;
+  }
+  &__controls label {
+    color: $tertiary-background-color;
+  }
+}
+
+.error {
+  color: $primary-text-color;
+}
